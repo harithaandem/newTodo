@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+         <link type="text/css" rel="stylesheet" href="ToDoList.css">
+        <script src="bundle.js" defer> </script>
+        <title>TODOLIST</title>
+    </head>
+    <body>
+        <h1>TODOLIST</h1>
+        <div>
+           <div class="todo_actionbar"> 
+              ADD DESCRIPTION: <input type="text" id="todo_text" value=" "></input>
+              <button id="add_todo" class="add_todo">ADD</button>
+              <button id="delete_selected_todo" class="delete_selected_todo">DELETE</button>
+              <button id="delete_all_todo" class="delete_all_todo">DELETEALL</button>
+            </div><br>
+            <div class="todo_container" id="todo_container"> 
+            </div>
+            <div  class="todo_template" id="template" data-type="todo_template">
+                <input type="checkbox" class="select_todo" data-action="select_todo">
+                 <li  class="todo_item" data-to-do-item="todo_list"> </li>
+                <button class="todo_active" data-action="mark_todo_completed">DONE</button>
+                <button class="todo_delete" data-action="todo_delete">REMOVE</button>
+                <button class="todo_update" data-action="todo_update">UPDATE</button>
+                </div>
+        </div>
+    </body>
+</html>
